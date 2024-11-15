@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM System - Authentication</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <div class="atm-container">
+        <div class="header-logo">INFO SUPERBANK</div>
+        <div class="auth-screen" id="authScreen">
+            <h2>Enter Your PIN</h2>
+            <input type="password" id="pinInput" placeholder="Enter PIN" maxlength="4">
+            <button onclick="validatePIN()">Submit</button>
+            <p id="errorMessage" style="color: red; display: none;">Invalid PIN. Please try again.</p>
+        </div>
+    
+        <script>
+            const correctPIN = "1234";
+    
+            function validatePIN() {
+                const enteredPIN = document.getElementById("pinInput").value;
+    
+                if (enteredPIN === correctPIN) {
+                    window.location.href = "transactions.html";
+                } else {
+                    document.getElementById("errorMessage").style.display = "block";
+                }
+            }
+        </script>
+    </div>
+    
+
+</body>
+</html>

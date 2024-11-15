@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM System</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to the external CSS file -->
+</head>
+<body>
+    <div class="atm-container">
+        <div id="display" class="display">Welcome! Please select a transaction.</div>
+        <button onclick="checkBalance()">Check Balance</button>
+        <button onclick="deposit()">Deposit</button>
+        <button onclick="goToWithdraw()">Withdraw</button>
+        <button onclick="Payment()">Bills Payment</button>
+        <button onclick="Transfer()">Transfer</button>
+        <button onclick="exit()">Exit</button>
+    </div>
+
+    <script>
+        function withdraw() {
+            window.location.href = "withdraw.html";
+        }
+    </script>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
